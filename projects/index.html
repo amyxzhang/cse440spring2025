@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Edit page title -->
+    <title>Projects - CSE 440</title>
+ 
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- This script dynamically loads CSS and JS files from the course base directory -->
+    <!-- Only edit if you want to change the paths to your JS/CSS sources -->
+    <script>
+      // Get the base path for the course web by extracting 'courses' + courseName + quarter
+      var fullPathArray = window.location.pathname.split('/');
+      var basePathArray = fullPathArray.slice(0,4);
+      var basePath = basePathArray.join('/');
+
+      // CSS files to load
+      var cssSources = [
+        '/site/css/bootstrap.min.css',
+        '/site/css/main.css',
+      ];
+
+      // Javscript files to load
+      var jsSources = [
+        '/site/js/jquery.min.js',
+        '/site/js/bootstrap.min.js',
+        '/site/js/nav-bar.js',
+        '/site/js/footer.js'
+      ];
+  
+      // Include the script that will load the CSS & Javscript files
+      document.write("<script src=\'" + basePath + "/site/js/load-sources.js\'><\/script>");
+      
+      function toggle_instructions() {
+		  var x = document.getElementById("instructions");
+		  var y = document.getElementById("card_instructions");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		    y.style.borderBottomLeftRadius = "0px";
+    		y.style.borderBottomRightRadius = "0px";
+		  } else {
+		    x.style.display = "none";
+		    y.style.borderBottomLeftRadius = "4px";
+    		y.style.borderBottomRightRadius = "4px";
+		  }
+		}
+    </script>
+
+  </head>
+  
+  <body>
+    <header class="site-header">
+    <!-- Javascript will load the navigation bar code here. -->
+    </header>
+
+    <div class="container">
+          
+      <!-- Begin page content -->
+    
+      <!-- Edit main page content -->
+      <h1>Project Theme</h1>
+      <p>
+        Theme: Self and Community Care
+      </p>
+      <p>
+        <b>“Shouting ‘self-care’ at people who actually need community care is how we fail people” — Nakita Valerio</b>
+      </p>
+      <p>
+        Practicing self-care is pivotal for managing our well-being. However, often when people practice and engage in discourse around self-care, community care is left out. Continuing to erase this vital component of self-care can inadvertently do a disservice to our personal well-being. Thus, the project theme for this quarter will be “Self and Community Care”. This can relate broadly to designing for users who are interested in learning, connecting, and practicing new ways to enhance the well-being of themselves and their communities.
+      </p>
+
+	
+	<div class="card">
+	  <ul class="list-group list-group-flush">
+	    <li class="list-group-item" id="card_instructions" style="background-color: #362ae2; color: #ffffff;" onclick="toggle_instructions()">Project instructions for teams</li>
+	    <li class="list-group-item" id="instructions" style="display: none;">
+	    	
+        <P>
+          Your team’s goal is to choose a community of people and design a product that empowers them to better manage their personal and communal well-being. You may target any relevant user groups, such as high school students, college graduates, people living in the city, or parents! However, we encourage you to try to stretch yourselves and pick a user group that you all do not consider yourself a member of; this is so that you will not rely too much on your own experiences during user research as personal biases can potentially affect your research findings. Over the course of the quarter, your team will work on designing a system to help this group of people learn and manage acts of care to improve not only their personal well-being, but connect and cultivate a sense of togetherness within their larger community.
+        </P>
+        <p>It will be important to define the following: </p>
+        <ul>
+          <li>Who are the members of this community?</li>
+          <li>What is the context that defines this community? Where is the community located?</li>
+          <li>What are some assumed problems and challenges that you might address?</li>
+        </ul>
+        <p>Some broad directions: </p>
+        <ul>
+          <li>Self-care (for example; sleep scheduling, relaxing activities, meal prepping, exercising, etc.)</li>
+          <li>Community Care (for example; food drive, starting and maintaining a community garden, group meditation, etc.)</li>
+          <li>Activism (for example; general protesting, mental health rights, creating support groups in the community, etc.)</li>
+        </ul>
+      
+        <p>
+          During this course, you will work with a team of students to narrow down on a community to focus on, learn about their needs, and design an intervention. In order to do this you will need to do secondary research to learn more about this community and conduct qualitative research to find first-hand opportunities and problems that you might address this quarter.
+        </p>
+        <p>
+          As part of your project, you will need to define what a specific community’s needs are that your project can help support, and what activity you would like to design to help address this need. While your design may not be able to address this head-on, it may be useful to consider the conditions that have made engaging with this community challenging while conducting user research and learning from your target group. Think about how the activity you chose is currently supported via technology (or not), what doesn’t work about current ways of supporting it, and how your solution will do this better. We also encourage you all to be cognizant about designing for intersectional facets of identity, as different intersecting sociocultural factors (e.g., gender, race, class, language) can influence how people choose to engage in self or community care. Finally, be specific in the community and specific target users you select! The specificity of addressing a particular group of people allows you to deeply think about what makes the group unique and how you would best want to support them. So, dive in and see what you can come up with!
+        </p>
+      
+        <p>Critical Considerations: </p>
+        <ul>
+          <li>It is critical that you keep an open mind to learning about potential problems and challenges for your chosen community.</li>
+          <li>Be sure to choose a community that you are either not a direct part of or one in which you can remain neutral to their needs and stories.</li>
+          <li>You need to consider a local community that you have access to throughout this course. This will require you to reach out to and interview members of this community.</li>
+          <li>Get creative! Don’t default to apps, explore alternative systems.</li>
+        </ul>
+	  	
+	    </li>
+	  </ul>
+	</div>
+	
+
+  <h1>Projects</h1>
+
+
+  <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/ConnectSTEM.jpeg">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">ConnectSTEM</h3>
+        <p class="card-text">
+          Empowering Women and Nonbinary Individuals in STEM
+          <BR><BR>
+          Team: Annie Xu, Joshua Peterson, Khushi Khandelwal, Finley Hutchison</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/innovating-inclusivity-empowering-women-and-nonbinary-individuals-in-stem-ca1cedd83ad1">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/innovating-inclusivity-with-connectstem-empowering-women-and-nonbinary-individuals-in-stem-dc879af4060d">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/dinesafe.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">DineSafe</h3>
+        <p class="card-text">
+          Finding restaurants that serve you!<BR><BR>
+          Team: Pahn Yenbut,Robert Snow,Andrew Darmawan Tjahjadi</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/expanding-options-for-the-food-sensitive-design-research-and-ideation-d5542594d39e">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/dinesafe-finding-restaurants-that-serve-you-6bc78b5cbd4e">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/FairFit.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">FairFit</h3>
+        <p class="card-text">Enabling a Better Gym Experience for Women<BR><BR>
+          Team: Gargi Panatula, Cade Dillon, Michelle Delgado-Alvarez, Meena Kuduva</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/fairfit-enabling-a-better-gym-experience-for-women-98294f6276b4">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://cse440.medium.com/fairfit-enabling-a-better-gym-experience-for-women-59d78046806b">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/foochine.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">Foochine</h3>
+        <p class="card-text">
+          Chipotle in a Vending Machine?!<BR><BR>
+          Team: Amy Cheng, Betty Cheng, Ha Vi Duong, Jessie Lin</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/chipotle-in-a-vending-machine-a9ee918c351b">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/chipotle-in-a-vending-machine-dfc3908fdf93">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/nourish.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">NourishU</h3>
+        <p class="card-text">
+          NourishU, a student’s daily nutrition supporter—ready at a moment’s notice to scan a snack, motivate a meal, provide information about protein intake, and more.<BR><BR>
+          Team: Amanda Yuan, Allyson Mangus, Ariel Fu, Javier Marin</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/nourishu-augmented-reality-meal-planner-for-university-students-33f0d5c177fd">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://cse440.medium.com/augmented-reality-meal-planner-for-university-students-c318dd23348d">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/KeepInTouch.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">KeepInTouch</h3>
+        <p class="card-text">
+          Bonded Beyond Screens<BR><BR>
+          Team: Zage Strassberg-Phillips, Michael Li, Josua Buerki</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/bonding-beyond-screens-keepintouch-as-digital-glue-09ac457d93f1">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/bonded-beyond-screens-keepintouch-as-digital-glue-c526f07499ee">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/planet.jpeg">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">Planet</h3>
+        <p class="card-text">
+          Take a Break With a Dose Of Planet<BR><BR>
+          Team: Christian Estrella, Jasmine Chi, Maia Song, Naoto Uemura</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/planet-take-a-break-with-a-dose-of-planet-224d5c8d0e10">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/planet-connect-and-unplug-5396792c6957">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/cultura.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">Cultura Connect</h3>
+        <p class="card-text">
+          Empowering Immigrants by Embracing Cultural Diversity<BR><BR>
+          Team: Julia Tawfik, Sulaiman Shahbain, Alon Bar-Nathan, Mitchell Ly</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/cultura-connect-embracing-your-roots-while-adapting-to-new-horizons-8be327f441e0">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/cultura-connect-empowering-immigrants-by-embracing-cultural-diversity-d3e9bb78dc85">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/dodo.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">DoDo</h3>
+        <p class="card-text">
+          Connect to achieve: Enhancing Productivity Through Social Synergy<BR><BR>
+          Team: Oscar Su, Wynne Tseng, Brooklyn Zhu</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/maximizing-efficiency-together-the-journey-with-a-productivity-partner-6a58b15b93be">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/task-busters-gamifying-your-to-dos-6bcc0d906392">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/book.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">Book Buddies</h3>
+        <p class="card-text">
+          Reading is More Fun with Friends!<BR><BR>
+          Team: Sean Lim, Autumn Rhee, Jessie Xu</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/book-buddies-reading-made-fun-friends-ff5c1b1f91c5">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/book-buddies-reading-is-more-fun-with-friends-261adab5a418">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/4life.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">VitalEase</h3>
+        <p class="card-text">
+          Your Companion in Elderly Care<BR><BR>
+          Team: Bella Cooper, Daithy Ren, Jonathan Desta, Hinal Patel</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/4life-smartwatch-solution-for-elderly-care-9d8aec077a60">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/vitalease-your-companion-in-elderly-care-8f8b5425e5f8">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/youth.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">YOU in Youth</h3>
+        <p class="card-text">
+          Empowering minds starting with you.<BR><BR>
+          Team: Aaleah Mendoza, Andy Thai, Gai Wai Wong, Renee Ruan</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/a-step-to-the-best-direction-d892dad8bb1e">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/ending-silence-breaking-generational-neglect-in-mental-health-b98c29f27e3c">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/huskies.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">Dawg Nourish</h3>
+        <p class="card-text">
+          A Paired Approach to Tackling Food Insecurity at UW<BR><BR>
+          Team: Jerry Huang, Istefat Sawda, Zainab Shehzad, Theo Favour</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/tackling-food-insecurity-at-uw-567cbcc30c65">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/a-paired-approach-to-tackling-food-insecurity-at-uw-71ae9bbfa6ce">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/fitfusion.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">Fit-Fusion</h3>
+        <p class="card-text">
+          Finding Friends for Fitness<BR><BR>
+          Team: Ben Kosa, Michael Dinh, Lukas Anstett</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/fit-fusion-finding-friends-for-fitness-d8677de73d27">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button>
+        </a>
+        <a href="https://medium.com/@cse440/we-exercise-better-together-8744207e3c88">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/settleIn.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">SettleIn</h3>
+        <p class="card-text">
+          New In Town? Connect, Discover, and Belong with the personalized SettleIn app<BR><BR>
+          Team: Shreya Sathyanarayanan, Bhavya Linga, Phuong Cao, Ray Chen</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://medium.com/@cse440/new-in-town-connect-discover-and-belong-with-the-personalized-settlein-app-a25f8b65c4d2">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button></a>
+        <a href="https://medium.com/@cse440/new-in-town-683af59020ea">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button></a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/pepPrep.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">PepPrep</h3>
+        <p class="card-text">
+          Prepare for tech interviews with Pep<BR><BR>
+          Team: Lauren Kreiger, Micah Chang, Brigit Parrish</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://cse440.medium.com/pepprep-797186bde372">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button></a>
+        <a href="https://cse440.medium.com/pepprep-prepare-for-tech-interviews-with-pep-6a6c95ae17a2">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button></a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/fitness.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">FitConnect</h3>
+        <p class="card-text">
+          Connect. Sweat. Belong.<BR><BR>
+          Team: Ray Oh, Clarence Muchina, Chien Le, Aaminah Alam</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://cse440.medium.com/fitnessbuddy-linking-newcomers-to-fitness-friends-a8c2cf8c1fbc">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button></a>
+        <a href="https://cse440.medium.com/fitconnect-connect-sweat-belong-3f5bd5c31bfe">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button></a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="card_project">
+        <div class="card-img">
+          <img class="card-img-top" src="img/jim.png">
+        </div>
+      <div class="card-body">
+        <h3 class="card-title">JIM</h3>
+        <p class="card-text">
+          Your Smart Kitchen Companion for Culinary Creativity and Social Connection<BR><BR>
+          Team: Jacob Frumkin, Noam Ronen, and Alex Zhang</p>
+
+        <div class="btn-group" role="group">
+          <a href="https://cse440.medium.com/reimagining-the-kitchen-innovative-smart-mirror-with-interactive-communal-cooking-classes-9d368ec7f02f">
+        <button type="button" class="btn btn-secondary btn-left">
+          User Research
+        </button></a>
+        <a href="https://cse440.medium.com/jim-your-smart-kitchen-companion-for-culinary-creativity-and-social-connection-dd24685bca5c">
+        <button type="button" class="btn btn-secondary btn-right">
+          Design
+        </button></a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+   
+
+    
+    
+    
+      <!-- End page content -->
+
+    </div>
+
+    <footer class="site-footer">
+    <!-- Javascript will load the footer code here. -->
+    </footer>
+
+  </body>
+
+</html>
