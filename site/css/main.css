@@ -76,12 +76,12 @@ h1, h2, h3, h4 {
  * Links
  */
 a {
-  color: #008000;
+  color: #3dc483;
   text-decoration: none; }
 a:visited {
-  color: #008000; }
+  color: #3dc483; }
 a:hover {
-  color: #008000;
+  color: #3dc483;
   text-decoration: underline; }
 
 /**
@@ -242,7 +242,7 @@ pre > code {
 
 .nav-sidebar li.active a, .nav-sidebar li a:hover, .nav-sidebar li a:focus, .nav-sidebar a.nav-link.active {
     background-color: var(--teal);
-    color: #4b2e83;
+    color: #3dc483;
     width: 100%;
     text-decoration: none;
 }
