@@ -76,12 +76,12 @@ h1, h2, h3, h4 {
  * Links
  */
 a {
-  color: #4e489c;
+  color: #008000;
   text-decoration: none; }
 a:visited {
-  color: #4e489c; }
+  color: #008000; }
 a:hover {
-  color: #6b68bb;
+  color: #008000;
   text-decoration: underline; }
 
 /**
@@ -189,7 +189,7 @@ pre > code {
  
  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #fff;
-    background-color: #6b68bb;
+    background-color: #3dc483;
 }
  
  
@@ -314,11 +314,11 @@ pre > code {
 
 
 .oddday {
-	background-color: #faf9fe;
+	background-color: #f9f9f7;
 }
 
 .evenday {
-	background-color: #e9e8fc;
+	background-color: #e5fbe5;
 }
 
 
